@@ -21,17 +21,17 @@ function App() {
 
   return (
     <>
-     <div className="w-screen h-screen">
+     <div>
 
       <div className="flex justify-center items-center py-3 shadow-lg">
         <h1 className='text-3xl text-black font-mono'>EasyPass</h1> 
       </div>
 
-      <div className="flex justify-center items-center w-full h-full">
+      <div className="flex justify-center items-center h-96">
        <div className="border-2 p-8 shadow-xl">
-        <div className="flex py-3">
-          <input type="text" placeholder="Password" value={password} className="text-lg box-border border-2 rounded-lg mr-3 w-96 px-3"></input>
-          <button className="bg-green-500 box-border px-2 rounded-lg text-white text-lg w-24">Copy</button>
+        <div className="flex py-3 justify-around">
+          <input type="text" placeholder="Password" value={password} className="text-lg box-border border-2 rounded-lg w-9/12 px-3"></input>
+          <button className="bg-green-500 box-border px-2 rounded-lg text-white text-lg w-2/12">Copy</button>
         </div>
         <div className="flex content-center">
           <label htmlFor="length">Length: {length}</label>
